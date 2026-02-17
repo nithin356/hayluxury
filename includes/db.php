@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = ""; // Default XAMPP password is empty
+$servername = "68.178.236.80";
+$username = "hayluxury";
+$password = "hayluxury@123"; // Default XAMPP password is empty
 $dbname = "hayluxury";
 
 // Create connection
