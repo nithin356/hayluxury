@@ -141,7 +141,7 @@ include_once 'db.php';
 
     <header>
         <?php if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true): ?>
-        <a href="/hayluxury/admin/logout.php"
+        <a href="/admin/logout.php"
             style="position: absolute; top: 10px; right: 20px; font-size: 10px; text-transform: uppercase; color: red;">Logout</a>
         <?php endif; ?>
 
@@ -154,7 +154,7 @@ include_once 'db.php';
 
         <nav>
             <ul>
-                <li><a href="/hayluxury/index.php"
+                <li><a href="/index.php"
                         class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' && !isset($_GET['cat']) ? 'active' : ''; ?>">All</a>
                 </li>
                 <?php
@@ -164,7 +164,7 @@ include_once 'db.php';
             if ($cat_result->num_rows > 0) {
                 while($cat_row = $cat_result->fetch_assoc()) {
                     $active = (isset($_GET['cat']) && $_GET['cat'] == $cat_row['id']) ? 'active' : '';
-                    echo '<li><a href="/hayluxury/index.php?cat=' . $cat_row['id'] . '" class="' . $active . '">' . $cat_row['name'] . '</a></li>';
+                    echo '<li><a href="/index.php?cat=' . $cat_row['id'] . '" class="' . $active . '">' . $cat_row['name'] . '</a></li>';
                 }
             }
             ?>
