@@ -10,7 +10,8 @@ include_once 'db.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAY.LUXURY</title>
-    <link rel="stylesheet" href="/hayluxury/assets/css/style.css?v=<?php echo time() + 3; ?>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23FFD700'>⚜</text></svg>">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/style.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
@@ -136,7 +137,7 @@ include_once 'db.php';
     <div class="top-bar">
         <div class="logo-container">
             <div class="logo">HAY.<span>LUXURY</span></div>
-            <img src="/hayluxury/penguin/peng.gif" alt="Penguin" class="penguin-mascot">
+            <img src="<?php echo BASE_URL; ?>/penguin/peng.gif" alt="Penguin" class="penguin-mascot">
         </div>
     </div>
     
