@@ -1,9 +1,9 @@
 <?php
 // Define base URL for assets
-if ($_SERVER['HTTP_HOST'] === 'localhost' || $_SERVER['HTTP_HOST'] === 'localhost:80' || $_SERVER['HTTP_HOST'] === 'localhost:8080') {
+if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false || strpos($_SERVER['HTTP_HOST'], '127.0.0.1') !== false) {
     define('BASE_URL', 'http://localhost/hayluxury');
 } else {
-    define('BASE_URL', 'https://' . $_SERVER['HTTP_HOST'] . '/hayluxury');
+    define('BASE_URL', 'https://' . $_SERVER['HTTP_HOST']);
 }
 
 $servername = "68.178.236.80";
