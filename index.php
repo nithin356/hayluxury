@@ -131,7 +131,8 @@
                         
                         $images_json = htmlspecialchars(json_encode($image_paths), ENT_QUOTES, 'UTF-8');
 
-                        echo "<tr>";
+                        $bg_style = ($row['brand_name'] === 'CTR') ? "style='background-color: #f9f6f1;'" : "";
+                        echo "<tr {$bg_style}>";
                         echo "<td data-label='Image'>
                                 <div class='image-container' onclick=\"openLightbox('$images_json')\" style='cursor: pointer;'>
                                     <div class='image-protection-overlay'></div>
