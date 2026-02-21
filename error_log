@@ -1,0 +1,21 @@
+[17-Feb-2026 15:10:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/gemk9fbbxskl/public_html/includes/db.php:8
+Stack trace:
+#0 /home/gemk9fbbxskl/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/gemk9fbbxskl/public_html/includes/header.php(5): include_once('/home/gemk9fbbx...')
+#2 /home/gemk9fbbxskl/public_html/index.php(1): include('/home/gemk9fbbx...')
+#3 {main}
+  thrown in /home/gemk9fbbxskl/public_html/includes/db.php on line 8
+[17-Feb-2026 15:14:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/gemk9fbbxskl/public_html/includes/db.php:8
+Stack trace:
+#0 /home/gemk9fbbxskl/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/gemk9fbbxskl/public_html/includes/header.php(5): include_once('/home/gemk9fbbx...')
+#2 /home/gemk9fbbxskl/public_html/index.php(1): include('/home/gemk9fbbx...')
+#3 {main}
+  thrown in /home/gemk9fbbxskl/public_html/includes/db.php on line 8
+[17-Feb-2026 15:14:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/gemk9fbbxskl/public_html/includes/db.php:8
+Stack trace:
+#0 /home/gemk9fbbxskl/public_html/includes/db.php(8): mysqli->__construct()
+#1 /home/gemk9fbbxskl/public_html/includes/header.php(5): include_once('/home/gemk9fbbx...')
+#2 /home/gemk9fbbxskl/public_html/index.php(1): include('/home/gemk9fbbx...')
+#3 {main}
+  thrown in /home/gemk9fbbxskl/public_html/includes/db.php on line 8

@@ -145,6 +145,10 @@
                         echo "<td data-label='Status'>{$status_html}</td>";
                         echo "<td data-label='Approx Weight' class='desktop-hide'>" . ($row['weight'] ? $row['weight'] : '-') . "</td>";
                         echo "<td data-label='Diamond'>" . ($row['diamond_info'] ? $row['diamond_info'] : '-') . "</td>";
+                        $host = $_SERVER['HTTP_HOST'] ?? '';
+                        $image_url = "https://{$host}/" . ltrim($row['image'], '/');
+                        $preview_url = "https://{$host}/product_share.php?id={$row['id']}";
+
                         $wa_message = "I am interested in:\n" .
                                      "*Name:* {$row['name']}\n" .
                                      "*REF:* {$row['id']}\n" .
@@ -153,7 +157,8 @@
                                      "*Color:* " . ($row['color'] ?: '-') . "\n" .
                                      "*Size:* " . ($row['size'] ?: '-') . "\n" .
                                      "*Approx Weight:* " . ($row['weight'] ?: '-') . "\n" .
-                                     "*Image:* http://" . $_SERVER['HTTP_HOST'] . "/hayluxury/{$row['image']}";
+                                     "*Preview:* {$preview_url}\n" .
+                                     "*Image:* {$image_url}";
                         $wa_encoded = urlencode($wa_message);
                         
                         echo "<td data-label='Contact'>
