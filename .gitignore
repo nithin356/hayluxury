@@ -1,0 +1,12 @@
+# Ignore uploaded images and runtime artifacts
+/uploads/
+/uploads/*
+/uploads/share_previews/
+/error_log
+/admin/utils.php
+
+# ignore local php env files if any
+*.env
+
+# ignore other generated caches
+*.log
