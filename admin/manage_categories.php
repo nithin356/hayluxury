@@ -53,7 +53,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <a href="manage_categories.php" style="color: var(--gold); border-bottom: 2px solid var(--gold);">Categories</a>
         <a href="manage_brands.php">Brands</a>
         <a href="manage_products.php">Products</a>
-         <a href="../index.php" target="_blank" style="float: right; color: var(--black);">Public Site</a>
+        <a href="manage_gold_price.php">Gold Price</a>
+        <a href="../index.php" target="_blank" style="float: right; color: var(--black);">Public Site</a>
     </div>
 
     <!-- Add Category Form -->
